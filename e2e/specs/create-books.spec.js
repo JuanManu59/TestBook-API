@@ -1,7 +1,7 @@
 const axios = require('axios');
 const { expect } = require('chai');
 
-const path = 'https://books-front-icesi.herokuapp.com/';
+const path = "https://books-back-icesi.herokuapp.com/books";
 
 const book = {
     "name": "nameBook",
@@ -10,7 +10,7 @@ const book = {
 
 let response;
 describe("When the user want to create a book",() => {
-    before(async() => {
+    before(async () => {
         oldListBooks = await axios.get(path);
         response = await axios.post(path, book);
         newListBooks = await axios.get(path);

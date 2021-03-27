@@ -1,7 +1,7 @@
 const axios = require('axios');
 const { expect } = require('chai');
 
-const path = 'https://books-front-icesi.herokuapp.com/';
+const path = 'https://books-back-icesi.herokuapp.com/books';
 
 const book = {
     "name": "nameBook",
